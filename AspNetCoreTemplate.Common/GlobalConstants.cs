@@ -1,6 +1,8 @@
-﻿namespace AspNetCoreTemplate.Common
+﻿using System;
+
+namespace AspNetCoreTemplate.Common
 {
-    public class GlobalConstants
+    public class Class1
     {
     }
 }
