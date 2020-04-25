@@ -1,8 +1,13 @@
-﻿using System;
-
-namespace AspNetCoreTemplate.Infrastructure
+﻿namespace AspNetCoreTemplate.Infrastructure
 {
-    public class Class1
+    using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+    using Microsoft.EntityFrameworkCore;
+
+    public class ApplicationDbContext : IdentityDbContext
     {
-    }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
+        }
+    }(LocalDb)\MSSQLLocalDB
 }
