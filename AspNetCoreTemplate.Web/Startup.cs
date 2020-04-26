@@ -13,6 +13,7 @@ namespace AspNetCoreTemplate.Web
     using AspNetCoreTemplate.Web.Middlewares;
     using AspNetCoreTemplate.Infrastructure.Seeding;
     using Microsoft.AspNetCore.Http;
+    using Microsoft.AspNetCore.Mvc;
 
     public class Startup
     {
@@ -39,7 +40,11 @@ namespace AspNetCoreTemplate.Web
             services.AddScoped<RolesSeeder>();
             services.AddScoped<UsersSeeder>();
 
-            services.AddControllersWithViews();
+            services.AddControllersWithViews(options =>
+            {
+                options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+            });
+
             services.AddRazorPages();
 
             services.Configure<CookiePolicyOptions>(
