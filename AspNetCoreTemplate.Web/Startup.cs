@@ -34,11 +34,20 @@ namespace AspNetCoreTemplate.Web
                     .AddEntityFrameworkStores<ApplicationDbContext>()
                     .AddDefaultTokenProviders();
 
+            //Register services for seeding
             services.AddScoped<RolesSeeder>();
             services.AddScoped<UsersSeeder>();
 
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddAntiforgery(options =>
+            {
+                // Set Cookie properties using CookieBuilder properties.
+                options.FormFieldName = "AntiforgeryFieldname";
+                options.HeaderName = "X-CSRF-TOKEN-HEADERNAME";
+                options.SuppressXFrameOptionsHeader = false;
+            });
 
             services.AddMvc();
         }
