@@ -1,6 +1,9 @@
 ﻿namespace AspNetCoreTemplate.Common
 {
-    public class GlobalConstants
+    public static class GlobalConstants
     {
+        public static string AdminEmail = "AdminEmail";
+
+        public static string AdminPassword = "AdminPassword";
     }
 }

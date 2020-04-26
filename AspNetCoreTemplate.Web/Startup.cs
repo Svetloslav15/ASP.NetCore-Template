@@ -10,6 +10,8 @@ namespace AspNetCoreTemplate.Web
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
+    using AspNetCoreTemplate.Web.Middlewares;
+    using AspNetCoreTemplate.Infrastructure.Seeding;
 
     public class Startup
     {
@@ -32,6 +34,9 @@ namespace AspNetCoreTemplate.Web
                     .AddEntityFrameworkStores<ApplicationDbContext>()
                     .AddDefaultTokenProviders();
 
+            services.AddScoped<RolesSeeder>();
+            services.AddScoped<UsersSeeder>();
+
             services.AddControllersWithViews();
             services.AddRazorPages();
 
@@ -41,6 +46,8 @@ namespace AspNetCoreTemplate.Web
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseDatabaseSeeding();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

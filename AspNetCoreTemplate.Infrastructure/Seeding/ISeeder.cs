@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AspNetCoreTemplate.Infrastructure.Seeding
+﻿namespace AspNetCoreTemplate.Infrastructure.Seeding
 {
-    class ISeeder
+    using System.Threading.Tasks;
+
+    public interface ISeeder
     {
+        Task SeedAsync();
     }
 }

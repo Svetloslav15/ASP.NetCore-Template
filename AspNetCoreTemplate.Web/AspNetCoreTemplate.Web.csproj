@@ -20,4 +20,9 @@
     <ProjectReference Include="..\AspNetCoreTemplate.Infrastructure\AspNetCoreTemplate.Infrastructure.csproj" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="Filters\" />
+  </ItemGroup>
+
 </Project>
