@@ -12,6 +12,7 @@ namespace AspNetCoreTemplate.Web
     using Microsoft.Extensions.Hosting;
     using AspNetCoreTemplate.Web.Middlewares;
     using AspNetCoreTemplate.Infrastructure.Seeding;
+    using Microsoft.AspNetCore.Http;
 
     public class Startup
     {
@@ -40,6 +41,13 @@ namespace AspNetCoreTemplate.Web
 
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.Configure<CookiePolicyOptions>(
+                options =>
+                {
+                    options.CheckConsentNeeded = context => true;
+                    options.MinimumSameSitePolicy = SameSiteMode.None;
+                });
 
             services.AddAntiforgery(options =>
             {
