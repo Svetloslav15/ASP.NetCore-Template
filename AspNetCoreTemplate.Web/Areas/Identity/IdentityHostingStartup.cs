@@ -1,5 +1,6 @@
 ﻿using System;
 using AspNetCoreTemplate.Infrastructure;
+using AspNetCoreTemplate.Infrastructure.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;

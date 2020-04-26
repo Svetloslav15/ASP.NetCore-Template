@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreTemplate.Web", "AspNetCoreTemplate.Web\AspNetCoreTemplate.Web.csproj", "{EF8A90F0-8536-4B33-991A-253A0F689748}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreTemplate.Infrastructure", "AspNetCoreTemplate.Infrastructure\AspNetCoreTemplate.Infrastructure.csproj", "{F47EE836-ADDA-40A5-8E86-EFEF21576E46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreTemplate.Infrastructure", "AspNetCoreTemplate.Infrastructure\AspNetCoreTemplate.Infrastructure.csproj", "{F47EE836-ADDA-40A5-8E86-EFEF21576E46}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AspNetCoreTemplate.Tests", "AspNetCoreTemplate.Tests", "{312C4A81-2E99-4FA5-95D7-3ED88817B2F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreTemplate.Tests.UnitTests", "AspNetCoreTemplate.Tests\AspNetCoreTemplate.Tests.UnitTests\AspNetCoreTemplate.Tests.UnitTests.csproj", "{A6324081-2A78-4BD5-B60D-969045792456}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreTemplate.Tests.UnitTests", "AspNetCoreTemplate.Tests\AspNetCoreTemplate.Tests.UnitTests\AspNetCoreTemplate.Tests.UnitTests.csproj", "{A6324081-2A78-4BD5-B60D-969045792456}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreTemplate.Tests.IntegrationTests", "AspNetCoreTemplate.Tests\AspNetCoreTemplate.Tests.IntegrationTests\AspNetCoreTemplate.Tests.IntegrationTests.csproj", "{0C98F905-1554-4B02-B911-63229FAD0A29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreTemplate.Tests.IntegrationTests", "AspNetCoreTemplate.Tests\AspNetCoreTemplate.Tests.IntegrationTests\AspNetCoreTemplate.Tests.IntegrationTests.csproj", "{0C98F905-1554-4B02-B911-63229FAD0A29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreTemplate.Common", "AspNetCoreTemplate.Common\AspNetCoreTemplate.Common.csproj", "{2FF20C4A-E523-4966-9A3D-2E5D3C4B9F03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreTemplate.Common", "AspNetCoreTemplate.Common\AspNetCoreTemplate.Common.csproj", "{2FF20C4A-E523-4966-9A3D-2E5D3C4B9F03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreTemplate.Core", "AspNetCoreTemplate.Core\AspNetCoreTemplate.Core.csproj", "{887B6CA0-7F01-44EA-BA18-D2A078A2816E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreTemplate.Core", "AspNetCoreTemplate.Core\AspNetCoreTemplate.Core.csproj", "{887B6CA0-7F01-44EA-BA18-D2A078A2816E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreTemplate.Web", "AspNetCoreTemplate.Web\AspNetCoreTemplate.Web.csproj", "{8DB05805-FA37-4DDF-A04C-CA9F64ED4D29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EF8A90F0-8536-4B33-991A-253A0F689748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF8A90F0-8536-4B33-991A-253A0F689748}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF8A90F0-8536-4B33-991A-253A0F689748}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF8A90F0-8536-4B33-991A-253A0F689748}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F47EE836-ADDA-40A5-8E86-EFEF21576E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F47EE836-ADDA-40A5-8E86-EFEF21576E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F47EE836-ADDA-40A5-8E86-EFEF21576E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,6 +43,10 @@ Global
 		{887B6CA0-7F01-44EA-BA18-D2A078A2816E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{887B6CA0-7F01-44EA-BA18-D2A078A2816E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{887B6CA0-7F01-44EA-BA18-D2A078A2816E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB05805-FA37-4DDF-A04C-CA9F64ED4D29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB05805-FA37-4DDF-A04C-CA9F64ED4D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB05805-FA37-4DDF-A04C-CA9F64ED4D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB05805-FA37-4DDF-A04C-CA9F64ED4D29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
