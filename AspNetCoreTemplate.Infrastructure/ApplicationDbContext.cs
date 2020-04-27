@@ -1,6 +1,7 @@
 ﻿namespace AspNetCoreTemplate.Infrastructure
 {
     using AspNetCoreTemplate.Infrastructure.Models;
+
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;

@@ -1,15 +1,17 @@
 ﻿namespace AspNetCoreTemplate.Web.Areas.Identity.Pages.Account
 {
+    using AspNetCoreTemplate.Infrastructure.Models;
+    using AspNetCoreTemplate.Common;
+
     using System.ComponentModel.DataAnnotations;
     using System.Text;
     using System.Threading.Tasks;
+
     using Microsoft.AspNetCore.Authorization;
-    using AspNetCoreTemplate.Infrastructure.Models;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.RazorPages;
     using Microsoft.AspNetCore.WebUtilities;
-    using AspNetCoreTemplate.Common;
 
     [AllowAnonymous]
     public class ResetPasswordModel : PageModel

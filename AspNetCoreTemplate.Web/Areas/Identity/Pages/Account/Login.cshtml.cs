@@ -1,17 +1,19 @@
 ﻿namespace AspNetCoreTemplate.Web.Areas.Identity.Pages.Account
 {
+    using AspNetCoreTemplate.Infrastructure.Models;
+    using AspNetCoreTemplate.Common;
+
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.Linq;
     using System.Threading.Tasks;
+    
     using Microsoft.AspNetCore.Authorization;
-    using AspNetCoreTemplate.Infrastructure.Models;
     using Microsoft.AspNetCore.Authentication;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.RazorPages;
     using Microsoft.Extensions.Logging;
-    using AspNetCoreTemplate.Common;
 
     [AllowAnonymous]
     public class LoginModel : PageModel

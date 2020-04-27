@@ -2,6 +2,7 @@
 {
     using AspNetCoreTemplate.Infrastructure.Models.Common;
     using AspNetCoreTemplate.Infrastructure.Repositories.Contracts;
+
     using System;
     using System.Linq;
 

@@ -1,19 +1,19 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
-using System.Text.Encodings.Web;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-
-using AspNetCoreTemplate.Infrastructure.Models;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.WebUtilities;
-
-namespace AspNetCoreTemplate.Web.Areas.Identity.Pages.Account
+﻿namespace AspNetCoreTemplate.Web.Areas.Identity.Pages.Account
 {
+    using AspNetCoreTemplate.Infrastructure.Models;
+
+    using System.ComponentModel.DataAnnotations;
+    using System.Text;
+    using System.Text.Encodings.Web;
+    using System.Threading.Tasks;
+    
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.AspNetCore.Identity.UI.Services;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Mvc.RazorPages;
+    using Microsoft.AspNetCore.WebUtilities;
+
     [AllowAnonymous]
     public abstract class ResendEmailConfirmationModel : PageModel
     {

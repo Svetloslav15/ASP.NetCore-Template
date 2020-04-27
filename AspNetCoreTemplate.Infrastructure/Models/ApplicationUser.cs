@@ -6,6 +6,11 @@
 
     public class ApplicationUser : IdentityUser, IAuditInfo, IDeletableEntity
     {
+        public ApplicationUser()
+        {
+            this.Id = Guid.NewGuid().ToString();
+        }
+
         public bool IsDeleted { get; set; }
 
         public DateTime? DeletedOn { get; set; }
