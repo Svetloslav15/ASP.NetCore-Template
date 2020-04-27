@@ -3,6 +3,7 @@ Template for building ASP Net Core MVC apps. This is a solution template for cre
 </br>
 > If you like this template, give me a star ⭐.
 </br>
+***
 ## Overview
 ### Core
 The Application Core holds the business model, which includes entities, services, and interfaces. These interfaces include abstractions for operations that will be performed using Infrastructure, such as data access, file system access, network calls, etc. Sometimes services or interfaces defined at this layer will need to work with non-entity types that have no dependencies on UI or Infrastructure. These can be defined as simple Data Transfer Objects (DTOs).
