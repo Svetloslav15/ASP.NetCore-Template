@@ -1,7 +1,6 @@
 # 💻 Extended Clean Architecture Solution Template
 Template for building ASP Net Core MVC apps. This is a solution template for creating Enterprise projects with ASP.NET Core.
 </br>
-> __If you like this template, give me a star ⭐.__
 </br>
 ## Overview
 ### Core
