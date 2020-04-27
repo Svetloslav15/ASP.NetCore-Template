@@ -11,6 +11,11 @@ This layer contains all application logic. It is dependent on the domain layer, 
 This layer contains classes for accessing external resources such as file systems, web services, smtp, and so on. These classes should be based on interfaces defined within the application layer.
 ### Web
 This layer is a single page application based on Angular 8 and ASP.NET Core 3. This layer depends on both the Application and Infrastructure layers, however, the dependency on Infrastructure is only to support dependency injection. Therefore only *Startup.cs* should reference Infrastructure.
+### Tests
+This layer is for tests, you can write both unit tests and integrational tests.
+### Common
+This layer is for global constants or files that are used in others layers.
+
  ## Technologies
 * .NET Core 3.1
 * ASP .NET Core 3.1
