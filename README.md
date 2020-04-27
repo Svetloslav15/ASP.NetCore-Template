@@ -1,6 +1,7 @@
 # ⭐ Extended Clean Architecture Solution Template
 Template for building ASP Net Core MVC apps. This is a solution template for creating Enterprise projects with ASP.NET Core.
-** If you like this template, give me a star ⭐. **
+</br>
+**If you like this template, give me a star ⭐.**
 </br>
 ## Overview
 ### Core
@@ -20,6 +21,6 @@ This layer is for global constants or files that are used in others layers.
 * Entity Framework Core 3.1
 * AutoMapper
 ## Support
-If you are having problems, please let us know by [raising a new issue]https://github.com/Svetloslav15/ASP.NetCore-Template/issues/new
+If you are having problems, please let us know by https://github.com/Svetloslav15/ASP.NetCore-Template/issues/new
 ## License
 This project is licensed with the [MIT license](LICENSE).
