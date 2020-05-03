@@ -21,8 +21,9 @@ This layer is for global constants or files that are used in others layers.
 * ASP .NET Core 3.1
 * Entity Framework Core 3.1
 * AutoMapper
-* XUnit 2.2.4
 * Selenium
+* XUnit 2.2.4
+
 ## Support
 If you are having problems, please let us know by https://github.com/Svetloslav15/ASP.NetCore-Template/issues/new
 ## License
